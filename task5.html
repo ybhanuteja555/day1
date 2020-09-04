@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aggregate</title>
+	<style type="text/css">
+		table{
+			padding: 50px;
+			border-collapse:0px;
+			background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR2-wh7zuHBosmao5E6mLxo7HPLWPXL4IWQng&usqp=CAU");
+			font-style: italic;
+			color:white;
+			height: 50%;
+			width: 50%;
+			size: 100;
+			
+
+		}
+	</style>
+	<script >
+	function marks()
+	 {
+	var m1,m2,m3,m4,m5,m6;
+	var tom=0;
+		m1=parseInt(document.sheet.t.value);
+		m2=parseInt(document.sheet.e.value);
+		m3=parseInt(document.sheet.m.value);
+		m4=parseInt(document.sheet.p.value);
+		m5=parseInt(document.sheet.b.value);
+		m6=parseInt(document.sheet.s.value);
+		tom+=m1+m2+m3+m4+m5+m6;
+	var avg1=tom/6;
+	document.sheet.tm.value=tom;
+	document.sheet.avg.value=avg1;
+
+	}
+	</script>
+</head>
+<body>
+	<p>AGGREGATE OF STUDENT</p>
+	<form  name="sheet">
+		<table >
+			<th>Marks</th>
+			<tr>
+				<td>Telugu :</td><td>
+				<input type="text" name="t">
+			</td>
+			</tr>
+			<tr><td>ENG :</td>
+				<td>
+					<input type="text" name="e">
+				</td>
+			</tr>
+			<tr>
+				<td>MATHS :</td>
+				<td>
+					<input type="text" name="m">
+				</td>
+			</tr>
+			<tr>
+				<td>PHY :</td>
+				<td>
+					<input type="text" name="p">
+				</td>
+			</tr>
+			<tr>
+				<td>BIO :</td>
+				<td>
+					<input type="text" name="b">
+				</td>
+			</tr>
+			<tr>
+				<td>SOC :</td>
+				<td>
+					<input type="text" name="s">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" onclick="marks()" value="Submit">
+				</td>
+			</tr>
+			<tr>
+				<td>total Marks:
+				</td>
+				<td>
+					<input type="text" name="tm">
+				</td>
+			</tr>
+			<tr>
+				<td>AVERAGE :</td>
+				<td>
+					<input type="text" name="avg">
+				</td>
+			</tr>
+		</table>
+	</form>
+<body>
+</html>
