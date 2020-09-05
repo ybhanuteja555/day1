@@ -1,7 +1,10 @@
 function marks()
 	 {
-	var m1,m2,m3,m4,m5,m6;
+	 	var regexp=/^[A-za-z]{2,30}$/;
+	var m1,m2,m3,m4,m5,m6,name;
 	var tom=0;
+		name=document.sheet.fname.value;
+
 		m1=parseInt(document.sheet.t.value);
 		m2=parseInt(document.sheet.e.value);
 		m3=parseInt(document.sheet.m.value);
@@ -12,5 +15,15 @@ function marks()
 	var avg1=tom/6;
 	document.sheet.tm.value=tom;
 	document.sheet.avg.value=avg1;
+	if(regexp.test(name.value)&&name.value!=null)
+		{
+			alert("your name is accepted");
+			return true;
+		}
+		else
+		{
+			alert("name should be only in alphabets");
+			return false;
+		}
 
 	}
