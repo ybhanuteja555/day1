@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ERRORS</title>
+</head>
+<body>
+	<p>ENTER THE DETAILS</p>
+	<input type="text" id="exception">
+	<button onclick="tcf()">submit</button>
+	<p id="o/p"></p>
+	<p id="fin"></p>
+	<script type="text/javascript">
+		function tcf() {
+			mes=document.getElementById("o/p");
+			var x=parseInt(document.getElementById("exception").value)
+			try{
+				if(x>10) throw "it is greater than 10";
+			}
+			catch(msg)
+			{
+				mes.innerHTML="input is"+msg;
+			}
+			finally
+			{
+				document.getElementById("fin").innerHTML="done with finally"
+			}
+		}
+	</script>
+
+</body>
+</html>
