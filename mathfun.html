@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math functions</title>
+	<script type="text/javascript">
+		function mathfun() {
+			var a=document.math.num1.value;
+			var b=Math.round(a);
+			var c=Math.pow(a,2);
+			var d=Math.sqrt(a);
+			var e=Math.random();
+			var f=Math.floor(e);
+			var g=Math.ceil(e);
+			var h=Math.sin(a);
+			var i=Math.cos(a);
+			document.math.num2.value=b;
+			document.math.num3.value=c;
+			document.math.num4.value=d;
+			document.math.num5.value=e;
+			document.math.num6.value=f;
+			document.math.num7.value=g;
+			document.math.num8.value=h;
+			document.math.num9.value=i;
+	}
+	</script>
+</head>
+<body>
+	<table>
+<form name="math" method="GET">
+	<tr>
+		<td>Number :</td>
+   		<td><input type="text" name="num1"></td>
+   	</tr>
+   	<tr>
+   		<td colspan="2" align="center"><input type="button"value="submit" onclick="mathfun()"></td>
+   	</tr>
+   	<tr>
+		<td>round :</td>
+   		<td><input type="text" name="num2"></td>
+   	</tr><tr>
+		<td>Power :</td>
+   		<td><input type="text" name="num3"></td>
+   	</tr>
+   	<tr>
+		<td>Square root :</td>
+   		<td><input type="text" name="num4"></td>
+   	</tr>
+   	<tr>
+		<td>Random :</td>
+   		<td><input type="text" name="num5"></td>
+   	</tr>
+   	<tr>
+		<td>ceil :</td>
+   		<td><input type="text" name="num6"></td>
+   	</tr>
+   	<tr>
+		<td>floor :</td>
+   		<td><input type="text" name="num7"></td>
+   	</tr>
+   	<tr>
+		<td>sin :</td>
+   		<td><input type="text" name="num8"></td>
+   	</tr>
+   	<tr>
+		<td>cos :</td>
+   		<td><input type="text" name="num9"></td>
+   	</tr>
+</form>
+</table>
+</body>
+</html>
