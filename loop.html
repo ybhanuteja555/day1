@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fibonaci</title>
+</head>
+<body>
+	Number:<br>
+	<input type="text" id="num" align="left">
+	<button onclick="check()">submit</button>
+	<script type="text/javascript">
+		function check(){
+			var a=parseInt(document.getElementById("num").value);
+			var b=[];
+			b.push(a);
+			document.write("fibonacci series is");
+			if (a>9){
+				if (a<100){
+		
+			var x=a,y=a+1,z;
+			b.push(y);
+				while(x<=100)
+				{
+					z=x+y;
+					x=y;
+					y=z;
+					b.push(z);
+				}
+				document.write(b);
+			}
+			}
+			else
+			{
+				alert("enter number in 10-100");
+			}
+		}
+	</script>
+</body>
+</html>
